@@ -2,392 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d54e324-374e-4b78-8d85-257821c862c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.phar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/pho" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/phpcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Collection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/CollectionInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Dictionary.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/DictionaryInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Exceptions/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Exceptions/ImmutableKeyException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Exceptions/InvalidArgumentException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/Exceptions/OutOfRangeException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/src/TypeValidator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/templates/FooCollection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/AccessTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/AddTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ClearTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ContainsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/DropRightTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/DropTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/DropWhileTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/EachTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/EveryTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/FindAllTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/FindIndexTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/FindLastTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/FindTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/GetIteratorTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/GetObjectNameTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/IndexExistsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/InsertRangeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/InsertTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/MapTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/MergeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ReduceRightTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ReduceTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/RemoveAtTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ReverseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ShuffleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/SliceTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/SortTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/TailTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/TakeRightTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/TakeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/TakeWhileTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/ToArrayTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Collection/WithoutTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/AddTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/ClearTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/DeleteTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/EachTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/ExistsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/FilterTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/GetOrElseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/KeysTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/MapTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/MergeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/ToArrayTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/ValuesTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/Dictionary/WithoutTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielgsims/php-collections/tests/exampleResources.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/danielstjules/pho" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/.coveralls.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/.gush.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/CHANGES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/TODO.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryCall.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryFile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryMethod.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/FactoryParameter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/file_header.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/functions_footer.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/functions_header.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/functions_imports.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/matchers_footer.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/matchers_header.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/parts/matchers_imports.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/generator/run.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInOrder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingKey.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingKeyValuePair.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayWithSize.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/MatchingOnce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/SeriesMatchingOnce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/AssertionError.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/BaseDescription.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/BaseMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsEmptyTraversable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Collection/IsTraversableWithSize.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AllOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AnyOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/CombinableMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/DescribedAs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/HasToString.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Is.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsAnything.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsCollectionContaining.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsEqual.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsIdentical.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsInstanceOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNot.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNull.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsSame.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsTypeOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/ShortcutCombination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Description.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/DiagnosingMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/FeatureMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Internal/SelfDescribingValue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/MatcherAssert.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matchers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/NullDescription.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Number/IsCloseTo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Number/OrderingComparison.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/SelfDescribing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/StringDescription.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeDiagnosingMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyValuePairTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayWithSizeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Collection/IsEmptyTraversableTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Collection/IsTraversableWithSizeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/AllOfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/AnyOfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/CombinableMatcherTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/DescribedAsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/EveryTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/HasToStringTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsAnythingTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsCollectionContainingTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsEqualTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsIdenticalTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsInstanceOfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsNotTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsNullTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsSameTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsTypeOfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SampleBaseClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SampleSubClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SetTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Number/IsCloseToTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Number/OrderingComparisonTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEmptyStringTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEqualIgnoringCaseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEqualIgnoringWhiteSpaceTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/MatchesPatternTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsIgnoringCaseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsInOrderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringEndsWithTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringStartsWithTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsArrayTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsBooleanTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsCallableTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsDoubleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsIntegerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsNumericTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsObjectTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsResourceTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsScalarTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Type/IsStringTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Xml/HasXPathTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/tests/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.coveralls.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.php_cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.styleci.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/conf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/cookbook/default_expectations.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/cookbook/detecting_mock_objects.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/cookbook/index.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/cookbook/map.rst.inc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/cookbook/mocking_hard_dependencies.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/getting_started/index.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/getting_started/installation.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/getting_started/map.rst.inc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/getting_started/simple_example.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/getting_started/upgrading.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/index.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/argument_validation.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/demeter_chains.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/expectations.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/final_methods_classes.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/index.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/instance_mocking.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/magic_methods.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/map.rst.inc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/mockery/configuration.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/mockery/exceptions.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/mockery/gotchas.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/mockery/index.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/mockery/reserved_method_names.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/object_recording.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/partial_mocks.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/pass_by_reference_behaviours.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/phpunit_integration.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/public_properties.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/public_static_properties.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/quick_examples.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/docs/reference/startup_methods.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/examples/starship/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/examples/starship/Starship.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/examples/starship/StarshipTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Configuration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Container.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CountValidator/AtMost.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CountValidator/CountValidatorAbstract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CountValidator/Exact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Exception/InvalidCountException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Exception/InvalidOrderException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Exception/NoMatchingExpectationException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Expectation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/ExpectationDirector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/ExpectationInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/CachingGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/DefinedTargetClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/Generator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/Method.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/MockConfiguration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/MockConfigurationBuilder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/MockDefinition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/Parameter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/Pass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/StringManipulationGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/TargetClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/UndefinedTargetClass.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Instantiator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Loader/Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Any.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/MatcherAbstract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Not.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Matcher/Type.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/MethodCall.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Mock.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/MockInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/ReceivedMethodCalls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Recorder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Undefined.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/VerificationDirector.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/package.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/AdhocTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/DemeterChainTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ExpectationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/DefinedTargetClassTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/CallTypeHintPassTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ClassNamePassTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InstanceMockPassTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InterfacePassTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/HamcrestExpectationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Loader/EvalLoaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Loader/LoaderTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Loader/RequireLoaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/LoaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithFinalWakeupTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithUnknownTypeHintTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockeryCanMockMultipleInterfacesWhichOverlapTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingParameterAndReturnTypesTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingProtectedMethodsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingVariadicArgumentsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/NamedMockTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/RecorderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/SpyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Test/Generator/MockConfigurationBuilderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/WithFormatterExpectationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/travis/after_script.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/travis/before_script.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/travis/extra.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/travis/install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/travis/script.sh" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/_files/file.txt" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ga.iml" afterPath="$PROJECT_DIR$/.idea/ga.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ga.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="ga.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -413,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -619,24 +242,33 @@
       <workItem from="1466189748228" duration="39432000" />
       <workItem from="1468094169140" duration="1840000" />
       <workItem from="1468223073279" duration="828000" />
-      <workItem from="1468243038800" duration="196000" />
+      <workItem from="1468243038800" duration="296000" />
     </task>
+    <task id="LOCAL-00001" summary="Removed dependencies">
+      <created>1468243252282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468243252283</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76439000" />
+    <option name="totallyTimeSpent" value="76539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1368" height="741" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25757575" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29411766" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30497593" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -681,6 +313,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removed dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -978,7 +614,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
