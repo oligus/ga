@@ -7,7 +7,7 @@ use GA\Individual;
 
 describe('Binary fitness', function() {
 
-    it('should give fitness score', function() {
+    xit('should give fitness score', function() {
         mt_srand(5);
 
         $individual = new Individual();

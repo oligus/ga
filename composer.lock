@@ -4,50 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b722c477ad1252089094f8ab3117b41d",
-    "content-hash": "2f80ba1ada6f23c3faf5373a0c457e45",
-    "packages": [
-        {
-            "name": "danielgsims/php-collections",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/danielgsims/php-collections.git",
-                "reference": "21cfeca1587700adf8c3785d173306473909f20a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/danielgsims/php-collections/zipball/21cfeca1587700adf8c3785d173306473909f20a",
-                "reference": "21cfeca1587700adf8c3785d173306473909f20a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.3",
-                "squizlabs/php_codesniffer": "2.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Collections\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel G Sims",
-                    "email": "danielgarthsims@gmail.com"
-                }
-            ],
-            "description": "Collection classes for PHP",
-            "time": "2016-06-11 13:27:28"
-        }
-    ],
+    "hash": "e37b12693a8dda15bb79707477243d95",
+    "content-hash": "51e9c0f2366c1b37d0f00101946821ce",
+    "packages": [],
     "packages-dev": [
         {
             "name": "danielstjules/pho",
@@ -145,16 +104,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "0.9.5",
+            "version": "0.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2"
+                "reference": "65d4ca18e15cb02eeb1e5336f884e46b9b905be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
-                "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/65d4ca18e15cb02eeb1e5336f884e46b9b905be0",
+                "reference": "65d4ca18e15cb02eeb1e5336f884e46b9b905be0",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +165,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2016-05-22 21:52:33"
+            "time": "2016-09-30 12:09:40"
         }
     ],
     "aliases": [],

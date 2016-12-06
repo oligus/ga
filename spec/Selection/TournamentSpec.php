@@ -8,7 +8,7 @@ describe('Tournament', function() {
 
     $tournament = new Tournament();
 
-    it('should select best fit out of tournament pool', function() use ($tournament) {
+    xit('should select best fit out of tournament pool', function() use ($tournament) {
         mt_srand(5);
 
         $binary = new Binary();
