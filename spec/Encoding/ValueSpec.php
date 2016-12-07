@@ -5,9 +5,9 @@ use GA\Settings;
 
 describe('Value encoding', function() {
 
-    it('should create chromosome', function() {
-        $genes = ['up', 'down', 'backward', 'forward'];
+    $genes = ['up', 'down', 'backward', 'forward'];
 
+    it('should create chromosome', function() use ($genes) {
         mt_srand(5);
         $value = new Value(null, $genes);
 
@@ -15,5 +15,27 @@ describe('Value encoding', function() {
         expect($value->chromosome())->toBe($result);
     });
 
+    it('should only accept array', function() {
+        $callable = function() { new Value(null, 234234); };
+        expect($callable)->toThrow('GA\Encoding\EncodingException');
+        $callable = function() { new Value(null, "moo"); };
+        expect($callable)->toThrow('GA\Encoding\EncodingException');
+    });
+
+    it('should generate chromosome', function() use ($genes) {
+        mt_srand(5);
+        $value = new Value(null, $genes);
+        $result = ['backward', 'up', 'up', 'down', 'up', 'backward', 'down', 'down', 'up', 'backward', 'down', 'forward', 'down', 'forward', 'up', 'forward', 'backward', 'backward', 'forward', 'down', 'up', 'forward', 'forward', 'down', 'forward', 'down', 'backward', 'backward', 'up', 'up', 'backward', 'up', 'up', 'down', 'down', 'down', 'up', 'forward', 'down', 'forward', 'forward', 'up', 'up', 'backward', 'forward', 'backward', 'down', 'forward', 'up', 'down', 'backward', 'up', 'forward', 'forward', 'backward', 'backward', 'backward', 'backward', 'up', 'backward', 'forward', 'up', 'forward', 'backward'];
+        expect($value->generate())->toBe($result);
+    });
+
+    it('should mutate', function() use ($genes) {
+        mt_srand(5);
+        $value = new Value(null, $genes);
+        $result = ['backward', 'up', 'up', 'down', 'up', 'backward', 'down', 'down', 'up', 'backward', 'down', 'forward', 'down', 'forward', 'up', 'forward', 'backward', 'backward', 'forward', 'down', 'up', 'forward', 'forward', 'down', 'forward', 'down', 'backward', 'backward', 'up', 'up', 'backward', 'up', 'up', 'down', 'down', 'down', 'up', 'forward', 'down', 'forward', 'forward', 'up', 'up', 'backward', 'forward', 'backward', 'down', 'forward', 'up', 'down', 'backward', 'up', 'forward', 'forward', 'backward', 'backward', 'backward', 'backward', 'up', 'backward', 'forward', 'up', 'forward', 'backward'];
+        expect($value->generate())->toBe($result);
+
+        $value->mutate();
+    });
 
 });

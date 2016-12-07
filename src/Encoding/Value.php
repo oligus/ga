@@ -26,21 +26,7 @@ use GA\Settings;
  */
 class Value extends Encoding
 {
-    protected $genes = [];
     protected $type = 'array';
-
-    public function __construct($chromosome = null, $genes = [])
-    {
-        if(!empty($genes)) {
-            $this->genes = $genes;
-        }
-
-        if(!is_null($chromosome) && count($chromosome) < Settings::CHROMOSOME_SIZE) {
-            throw new EncodingException('Illegal chromosome size');
-        }
-
-        $this->chromosome = empty($chromosome) ? $this->generate() : $chromosome;
-    }
 
     public function mutate()
     {

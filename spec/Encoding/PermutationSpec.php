@@ -19,7 +19,6 @@ describe('Permutation encoding', function() {
         expect($callable)->toThrow('GA\Encoding\EncodingException');
     });
 
-
     it('should generate chromosome', function() {
         mt_srand(5);
 

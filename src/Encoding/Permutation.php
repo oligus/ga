@@ -25,15 +25,6 @@ class Permutation extends Encoding
 {
     protected $genes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    public function __construct($chromosome = null)
-    {
-        if(!is_null($chromosome) && strlen($chromosome) < Settings::CHROMOSOME_SIZE) {
-            throw new EncodingException('Illegal chromosome size');
-        }
-
-        $this->chromosome = empty($chromosome) ? $this->generate() : $chromosome;
-    }
-
     /**
      * Order changing - two numbers are selected and exchanged
      *
@@ -44,7 +35,10 @@ class Permutation extends Encoding
         $chromosome = $this->chromosome;
 
         $firstPosition = mt_rand(0, Settings::CHROMOSOME_SIZE);
-        $lastPosition = mt_rand(0, Settings::CHROMOSOME_SIZE);
+
+        do {
+            $lastPosition = mt_rand(0, Settings::CHROMOSOME_SIZE);
+        } while($lastPosition === $firstPosition);
 
         $firstGene =  (int) substr($chromosome, $firstPosition , 1);
         $lastGene =  (int) substr($chromosome, $lastPosition , 1);

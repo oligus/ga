@@ -25,20 +25,6 @@ class Binary extends Encoding
     protected $genes = [0, 1];
 
     /**
-     * Binary constructor.
-     * @param null $chromosome
-     * @throws EncodingException
-     */
-    public function __construct($chromosome = null)
-    {
-        if(!is_null($chromosome) && strlen($chromosome) < Settings::CHROMOSOME_SIZE) {
-            throw new EncodingException('Illegal chromosome size');
-        }
-
-        $this->chromosome = empty($chromosome) ? $this->generate() : $chromosome;
-    }
-
-    /**
      * @param null $bit
      * @return int
      */
