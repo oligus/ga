@@ -8,7 +8,7 @@ class Binary extends AbstractFitness
 {
     public function getFitness(Individual $individual) 
     {
-        $chromosome = $individual->getChromosome();
+        $chromosome = $individual->encoding()->chromosome();
         $score = 0;
         for($i = 0; $i < strlen($chromosome); $i++) {
             $geneA = substr($chromosome, $i, 1);

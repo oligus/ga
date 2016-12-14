@@ -1,19 +1,18 @@
 <?php
 
 
-use GA\Fitness\Binary;
+use GA\Fitness\Binary as BinaryFitness;
+use GA\Encoding\Binary as BinaryEncoding;
 
 use GA\Individual;
 
 describe('Binary fitness', function() {
 
-    xit('should give fitness score', function() {
+    it('should give binary fitness score', function() {
         mt_srand(5);
 
-        $individual = new Individual();
-        $individual->generate();
-
-        $binary = new Binary();
+        $individual = new Individual(new BinaryEncoding());
+        $binary = new BinaryFitness();
 
         $binary->setSolution('1100101110010110110011100101010000001001111011010110010000100011');
         expect($binary->getFitness($individual))->toEqual(98.4375);
