@@ -1,5 +1,14 @@
 <?php
+
+namespace GA\Reproduction;
+
+use GA\Reproduction;
+use GA\Settings;
+use GA\Encoding;
+
 /**
+ * Class UniformCrossOver
+ *
  * The Uniform Crossover uses a fixed mixing ratio between two parents.
  * Unlike one- and two-point crossover, the Uniform Crossover enables the
  * parent chromosomes to contribute the gene level rather than the segment
@@ -14,39 +23,56 @@
  * Mixing ratio 0.5
  * Children: 10101 & 01010 (by chance);
  *
+ * @package GA\Reproduction
  */
-namespace GA\Reproduction;
-
-use GA\Individual;
-use GA\Settings;
-
-class UniformCrossOver implements ReproductionStrategy
+class UniformCrossOver extends Reproduction
 {
-    public function reproduce(Individual $father, Individual $mother)
+    /**
+     * @param Encoding $father
+     * @param Encoding $mother
+     * @return array
+     */
+    protected function encoding(Encoding $father, Encoding $mother) : array
     {
-        $iFather = $father->getChromosome();
-        $iMother = $mother->getChromosome();
+        $type = $father->getType();
 
-        $childGeneA = $father->getChromosome();
-        $childGeneB = $mother->getChromosome();
+        $fc = $father->chromosome();
+        $mc = $mother->chromosome();
 
-        $max = strlen($iFather);
+        $childGeneA = $father->chromosome();
+        $childGeneB = $mother->chromosome();
 
-        for($i = 0; $i < $max; $i++) {
-            $rnd = (float)mt_rand()/(float)getrandmax();
+        if($type === 'array') {
+            $max = count($fc);
 
-            if($rnd <= Settings::UNIFORM_CROSSOVER_MIXING_RATIO) {
-                $fg = substr($iFather, $i, 1);
-                $mg = substr($iMother, $i, 1);
+            for($i = 0; $i < $max; $i++) {
+                $rnd = (float) mt_rand() / (float) getrandmax();
 
-                $childGeneA = substr_replace($childGeneA, $mg, $i, 1);
-                $childGeneB = substr_replace($childGeneB, $fg, $i, 1);
+                if($rnd <= Settings::UNIFORM_CROSSOVER_MIXING_RATIO) {
+                    $fg = $fc[$i];
+                    $mg = $mc[$i];
+
+                    $childGeneA[$i] = $mg;
+                    $childGeneB[$i] = $fg;
+                }
+            }
+        } else {
+            $max = strlen($fc);
+
+            for($i = 0; $i < $max; $i++) {
+                $rnd = (float) mt_rand() / (float) getrandmax();
+
+                if($rnd <= Settings::UNIFORM_CROSSOVER_MIXING_RATIO) {
+                    $fg = substr($fc, $i, 1);
+                    $mg = substr($mc, $i, 1);
+
+                    $childGeneA = substr_replace($childGeneA, $mg, $i, 1);
+                    $childGeneB = substr_replace($childGeneB, $fg, $i, 1);
+                }
             }
         }
 
-        $childA = new Individual($childGeneA);
-        $childB = new Individual($childGeneB);
+        return [$childGeneA, $childGeneB];
 
-        return [$childA, $childB];
     }
 }

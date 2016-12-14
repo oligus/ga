@@ -4,6 +4,12 @@ use GA\Population;
 
 describe('Population', function() {
 
+    xit('should generate population', function() {
+        $population = new Population(new \GA\Fitness\Binary());
+        $population->generate();
+        expect($population->count())->toEqual(200);
+    });
+
     xit('should return fittest', function() {
         mt_srand(5);
 
@@ -16,12 +22,6 @@ describe('Population', function() {
 
         expect($population->getFittest()->getChromosome())->toEqual('0010111111001100100111111100110001100010010101111110001110001010');
         expect($population->getFittest()->getFitness())->toEqual(70.3125);
-    });
-
-    xit('should generate population', function() {
-        $population = new Population(new \GA\Fitness\Binary());
-        $population->generate();
-        expect($population->count())->toEqual(200);
     });
 
     xit('should remove individual', function() {
@@ -59,8 +59,6 @@ describe('Population', function() {
             if($generation > 2000) {
                 break;
             }
-
         }
-        
     });
 });

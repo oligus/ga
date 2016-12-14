@@ -1,41 +1,24 @@
 <?php
 
 use GA\Individual;
+use GA\Encoding\Binary;
 
 describe('Individual', function() {
 
-    $individual = new Individual();
-    
-    xit('it should generate chromosome', function() use ($individual) {
-        mt_srand(5);
-        $individual->generate();
-       
-        expect($individual->getChromosome())
-            ->toEqual('1000101110010110110011100101010000001001111011010110010000100011');
-    });
-    
-    xit('should mutate', function() use ($individual) {
-        mt_srand(5);
-        $individual->generate();
 
-        expect($individual->getChromosome())
+    it('it should create a new individual', function() {
+        mt_srand(5);
+        $encoding = new Binary();
+        $individual = new Individual($encoding);
+
+        expect($individual->encoding()->chromosome())
             ->toEqual('1000101110010110110011100101010000001001111011010110010000100011');
 
-        $individual->mutate();
+        mt_srand(2);
+        $individual = new Individual();
 
-        // Flips bit 8 and 13 by chance
-        expect($individual->getChromosome())
-            ->toEqual('1000101100010010110011100101010000001001111011010110010000100011');
-
-        
-    });
-    
-    it('shouldflip bits', function() use ($individual) {
-        mt_srand(5);
-        $individual->generate();
-        expect($individual->flipBit())->toEqual("1");
-        expect($individual->flipBit($exclude = "1"))->toEqual("0");
-        expect($individual->flipBit($exclude = "0"))->toEqual("1");
+        expect($individual->encoding()->chromosome())
+            ->toEqual('1111111100100000110010011011001100100100110111000010000101011101');
     });
 
 });

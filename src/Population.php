@@ -3,7 +3,6 @@
 namespace GA;
 
 use GA\Selection\Elitism;
-use GA\Reproduction\ReproductionStrategy;
 use GA\Selection\Tournament;
 
 class Population
@@ -86,7 +85,7 @@ class Population
         }
     }
 
-    public function evolve(ReproductionStrategy $reproduction) : Population
+    public function evolve(Reproduction $reproduction) : Population
     {
         $newPopulation = new Population($this->fitness);
 

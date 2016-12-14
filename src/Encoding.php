@@ -22,7 +22,8 @@ abstract class Encoding
      */
     public function __construct($chromosome = null, $genes = [])
     {
-        if(!is_null($chromosome) && strlen($chromosome) < Settings::CHROMOSOME_SIZE) {
+
+        if(!$this->isLegalSize($chromosome)) {
             throw new EncodingException('Illegal chromosome size');
         }
 
@@ -35,6 +36,23 @@ abstract class Encoding
         }
 
         $this->chromosome = empty($chromosome) ? $this->generate() : $chromosome;
+    }
+
+    private function isLegalSize($chromosome)
+    {
+        if(is_null($chromosome)) {
+            return true;
+        }
+
+        if($this->getType() === 'string' && strlen($chromosome) === Settings::CHROMOSOME_SIZE) {
+            return true;
+        }
+
+        if($this->getType() === 'array' && count($chromosome) === Settings::CHROMOSOME_SIZE) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -52,19 +70,27 @@ abstract class Encoding
     }
 
     /**
-     * @return int
-     */
-    protected function getRandomPosition() : int
-    {
-        return mt_rand(0, count($this->genes) - 1);
-    }
-
-    /**
      * @return array|null|string
      */
     public function chromosome()
     {
         return $this->chromosome;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @return int
+     */
+    protected function getRandomPosition() : int
+    {
+        return mt_rand(0, count($this->genes) - 1);
     }
 
     /**
