@@ -7,16 +7,26 @@ use GA\Individual;
 use GA\Population;
 use GA\Settings;
 
+/**
+ * Class Tournament
+ * @package GA\Selection
+ */
 class Tournament extends AbstractSelection
 {
-    public function getWinner(Population $population)
+    /**
+     * @param Population $population
+     * @param Fitness $fitness
+     * @return Individual
+     */
+    public function getWinner(Population $population, Fitness $fitness) : Individual
     {
         $pool = $this->getPool($population);
 
+        /* @var Individual $fittest */
         $fittest = $pool[0];
 
         foreach($pool as $individual) {
-            if($population->getFitnessFunction()->getFitness($individual) > $fittest->getFitness() ) {
+            if($fitness->getValue($individual) > $fitness->getValue($fittest)) {
                 $fittest = $individual;
             }
         }
@@ -24,7 +34,11 @@ class Tournament extends AbstractSelection
         return $fittest;
     }
 
-    private function getPool(Population $population)
+    /**
+     * @param Population $population
+     * @return array
+     */
+    private function getPool(Population $population) : array
     {
         $pool = [];
 

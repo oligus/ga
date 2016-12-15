@@ -8,19 +8,17 @@ describe('Elitism', function() {
 
     $elitism = new Elitism();
 
-    xit('should', function() use ($elitism) {
+    it('should', function() use ($elitism) {
         mt_srand(5);
 
-        $population = new Population(new Binary('1010111111111111111111111111111111111111111111111111111111111111'));
+        $population = new Population('binary');
         $population->generate(10);
-
         $elitism->setPopulation($population);
-        
-        $pool = $elitism->getElites($population);
+
+        $fitness = new \GA\Fitness('1010111111111111111111111111111111111111111111111111111111111111');
+        $pool = $elitism->getElites($population, $fitness);
 
         expect(count($pool))->toEqual(2);
-
-        expect($pool[0]->getFitness())->toEqual(65.625);
-
+        expect($fitness->getValue($pool[0]))->toEqual((float) 65.625);
     });
 });

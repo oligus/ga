@@ -30,7 +30,7 @@ class Permutation extends Encoding
      *
      * @return Permutation
      */
-    public function mutate()
+    public function mutate() : self
     {
         $chromosome = $this->chromosome;
 

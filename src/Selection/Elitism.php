@@ -8,9 +8,9 @@ use GA\Settings;
 
 class Elitism extends AbstractSelection
 {
-    public function getElites(Population $population)
+    public function getElites(Population $population, Fitness $fitness)
     {
-        $population->orderByFitness();
+        $population = $fitness->orderByFitness($population);
         $pool = $population->get();
         $pool = array_slice($pool, 0, Settings::ELITISM_POOL_SIZE);
 

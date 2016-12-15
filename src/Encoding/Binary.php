@@ -44,7 +44,7 @@ class Binary extends Encoding
     /**
      * @return Binary
      */
-    public function mutate()
+    public function mutate() : self
     {
         $chromosome = $this->chromosome;
 

@@ -15,40 +15,21 @@ describe('Population', function() {
     it('should order by fittest', function() {
         mt_srand(5);
 
-        $population = new Population('binary', 5);
+        $population = new Population('binary');
         $population->generate(5);
         expect($population->count())->toEqual(5);
 
-        $fitness = new \GA\Fitness;
-        $fitness->setSolution('1111111111000000000011111111110000000000111111111100000000001010');
-        $population->setFitness($fitness);
-        $population->orderByFitness();
+        $fitness = new \GA\Fitness('1111111111000000000011111111110000000000111111111100000000001010');
+        $population = $fitness->orderByFitness($population);
 
+        expect($fitness->getValue($population->get()[0]))
+            ->toBeGreaterThan($fitness->getValue($population->get()[1]));
 
-        expect($population->getFitness()->getValue($population->get()[0]))
-            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[1]));
+        expect($fitness->getValue($population->get()[1]))
+            ->toBeGreaterThan($fitness->getValue($population->get()[2]));
 
-        expect($population->getFitness()->getValue($population->get()[1]))
-            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[2]));
-
-        expect($population->getFitness()->getValue($population->get()[2]))
-            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[3]));
-    });
-
-    it('should get the fittest individual', function() {
-        mt_srand(5);
-
-        $population = new Population('binary', 5);
-        $population->generate(5);
-        expect($population->count())->toEqual(5);
-
-        $fitness = new \GA\Fitness;
-        $fitness->setSolution('1111111111000000000011111111110000000000111111111100000000001010');
-        $population->setFitness($fitness);
-
-        $individual = $population->getFittest();
-
-        expect($individual->encoding()->chromosome())->toEqual('1000101110010110110011100101010000001001111011010110010000100011');
+        expect($fitness->getValue($population->get()[2]))
+            ->toBeGreaterThan($fitness->getValue($population->get()[3]));
     });
 
     xit('should evolve', function() {

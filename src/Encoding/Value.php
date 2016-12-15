@@ -3,7 +3,6 @@
 namespace GA\Encoding;
 
 use GA\Encoding;
-use GA\Settings;
 
 /**
  * Direct value encoding can be used in problems, where some complicated value, such as real numbers, are used.

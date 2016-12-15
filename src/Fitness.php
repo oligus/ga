@@ -2,25 +2,40 @@
 
 namespace GA;
 
+/**
+ * Class Fitness
+ * @package GA
+ */
 class Fitness
 {
     private $solution;
 
-    public function __construct()
+    /**
+     * Fitness constructor.
+     * @param $solution
+     * @throws GaException
+     */
+    public function __construct($solution)
     {
+        if(empty($solution)) {
+            throw new GaException('No solution is set for fitness');
+        }
 
-    }
-
-    public function setSolution($solution)
-    {
         $this->solution = $solution;
     }
 
+    /**
+     * @return string|array
+     */
     public function getSolution()
     {
         return $this->solution;
     }
 
+    /**
+     * @param Individual $individual
+     * @return float
+     */
     public function getValue(Individual $individual) : float
     {
         $chromosome = $individual->encoding()->chromosome();
@@ -49,5 +64,35 @@ class Fitness
         $result = ($score/$length) * 100;
 
         return (double) $result;
+    }
+
+    /**
+     * @param Population $population
+     * @return Population
+     */
+    public function orderByFitness(Population $population) : Population
+    {
+        $pop = $population->get();
+
+        usort($pop, function(Individual $a, Individual $b) {
+            if ($this->getValue($a) === $this->getValue($b)) {
+                return 0;
+            }
+            return ($this->getValue($a) < $this->getValue($b)) ? 1 : -1;
+        });
+
+        $newPopulation = new Population($population->getEncoding());
+        $newPopulation->set($pop);
+        return $newPopulation;
+    }
+
+    /**
+     * @param \GA\Population $population
+     * @return \GA\Individual
+     */
+    public function getFittest(Population $population) : Individual
+    {
+        $orderedPopulation = $this->orderByFitness($population);
+        return $orderedPopulation->get()[0];
     }
 }

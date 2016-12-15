@@ -11,9 +11,6 @@ class Population
     private $encoding;
     private $population = [];
 
-    /* @var Fitness $fitness */
-    private $fitness;
-
     public function __construct($encoding = 'binary')
     {
         $this->encoding = $encoding;
@@ -37,43 +34,28 @@ class Population
         $this->population[] = $individual;
     }
 
-    public function get()
+    /**
+     * @return string
+     */
+    public function getEncoding() : string
+    {
+        return $this->encoding;
+    }
+
+
+    public function get() : array
     {
         return $this->population;
+    }
+
+    public function set(array $population = [])
+    {
+        $this->population = $population;
     }
 
     public function count()
     {
         return count($this->population);
-    }
-
-    public function setFitness(Fitness $fitness)
-    {
-        $this->fitness = $fitness;
-    }
-
-    public function getFitness()
-    {
-        return $this->fitness;
-    }
-
-    public function orderByFitness()
-    {
-        usort($this->population, function(Individual $a, Individual $b) {
-            if ($this->fitness->getValue($a) === $this->fitness->getValue($b)) {
-                return 0;
-            }
-            return ($this->fitness->getValue($a) < $this->fitness->getValue($b)) ? 1 : -1;
-        });
-    }
-
-    /**
-     * @return \GA\Individual
-     */
-    public function getFittest()
-    {
-        $this->orderByFitness();
-        return $this->population[0];
     }
 
     public function evolve(Reproduction $reproduction) : Population
