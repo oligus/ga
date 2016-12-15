@@ -4,11 +4,19 @@ namespace GA;
 
 use GA\Encoding\Binary;
 
+/**
+ * Class Individual
+ * @package GA
+ */
 class Individual
 {
     /* @var Encoding $encoding */
     private $encoding;
 
+    /**
+     * Individual constructor.
+     * @param null $encoding
+     */
     public function __construct($encoding = null)
     {
         if($encoding instanceof Encoding) {
@@ -19,9 +27,9 @@ class Individual
     }
 
     /**
-     * @return \GA\Encoding
+     * @return Encoding
      */
-    public function encoding()
+    public function encoding() : Encoding
     {
         return $this->encoding;
     }

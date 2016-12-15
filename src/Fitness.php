@@ -21,7 +21,7 @@ class Fitness
         return $this->solution;
     }
 
-    public function getFitness(Individual $individual) : float
+    public function getValue(Individual $individual) : float
     {
         $chromosome = $individual->encoding()->chromosome();
         $score = 0;

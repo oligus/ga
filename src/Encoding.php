@@ -2,6 +2,9 @@
 
 namespace GA;
 
+use GA\Encoding\Binary;
+use GA\Encoding\Permutation;
+use GA\Encoding\Value;
 use GA\Encoding\EncodingException;
 
 /**
@@ -38,7 +41,27 @@ abstract class Encoding
         $this->chromosome = empty($chromosome) ? $this->generate() : $chromosome;
     }
 
-    private function isLegalSize($chromosome)
+    public static function create($encodingType = 'binary', $chromosome = null, $genes = []) : self
+    {
+        switch($encodingType) {
+            case 'binary':
+                return new Binary($chromosome, $genes);
+                break;
+
+            case 'permutation':
+                return new Permutation($chromosome, $genes);
+                break;
+
+            case 'value':
+                return new Value($chromosome, $genes);
+                break;
+
+            default:
+                return new Binary($chromosome, $genes);
+        }
+    }
+
+    private function isLegalSize($chromosome) : bool
     {
         if(is_null($chromosome)) {
             return true;
@@ -80,7 +103,7 @@ abstract class Encoding
     /**
      * @return string
      */
-    public function getType()
+    public function getType() : string
     {
         return $this->type;
     }
@@ -98,7 +121,7 @@ abstract class Encoding
      *
      * @return string
      */
-    private function generateString()
+    private function generateString() :string
     {
         $chromosome = '';
 
@@ -114,7 +137,7 @@ abstract class Encoding
      *
      * @return array
      */
-    private function generateArray()
+    private function generateArray() : array
     {
         $chromosome = [];
 

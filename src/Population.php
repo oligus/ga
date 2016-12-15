@@ -4,20 +4,32 @@ namespace GA;
 
 use GA\Selection\Elitism;
 use GA\Selection\Tournament;
+use GA\Fitness;
 
 class Population
 {
+    private $encoding;
     private $population = [];
+
+    /* @var Fitness $fitness */
     private $fitness;
 
-    public function __construct(Fitness $fitness)
+    public function __construct($encoding = 'binary')
     {
-        $this->fitness = $fitness;
+        $this->encoding = $encoding;
     }
 
-    public function getFitnessFunction()
+    public function generate($size = null)
     {
-        return $this->fitness;
+        if(is_null($size)) {
+            $size = Settings::POPULATION_SIZE;
+        }
+
+        for($i = 0; $i < $size; $i++) {
+            $encoding = Encoding::create($this->encoding);
+            $individual = new Individual($encoding);
+            $this->add($individual);
+        }
     }
 
     public function add(Individual $individual)
@@ -32,16 +44,26 @@ class Population
 
     public function count()
     {
-         return count($this->population);
+        return count($this->population);
+    }
+
+    public function setFitness(Fitness $fitness)
+    {
+        $this->fitness = $fitness;
+    }
+
+    public function getFitness()
+    {
+        return $this->fitness;
     }
 
     public function orderByFitness()
     {
         usort($this->population, function(Individual $a, Individual $b) {
-            if ($this->fitness->getFitness($a) == $this->fitness->getFitness($b)) {
+            if ($this->fitness->getValue($a) === $this->fitness->getValue($b)) {
                 return 0;
             }
-            return ($this->fitness->getFitness($a) < $this->fitness->getFitness($b)) ? 1 : -1;
+            return ($this->fitness->getValue($a) < $this->fitness->getValue($b)) ? 1 : -1;
         });
     }
 
@@ -52,37 +74,6 @@ class Population
     {
         $this->orderByFitness();
         return $this->population[0];
-    }
-
-    public function generate($size = null)
-    {
-        if(is_null($size)) {
-            $size = Settings::POPULATION_SIZE;
-        }
-
-        for($i = 0; $i < $size; $i++) {
-            $individual = new Individual();
-            $individual->generate();
-            $individual->setFitness($this->fitness); // XXX Probably not needed
-            $this->add($individual);
-        }
-    }
-
-    // XXX Probably not needed
-    public function removeIndividual(Individual $individual)
-    {
-        $key = null;
-        
-        /* @var \GA\Individual $popIndividual */
-        foreach($this->population as $index => $popIndividual) {
-            if($popIndividual->getChromosome() === $individual->getChromosome()) {
-                $key = $index;
-            }
-        }
-
-        if(!is_null($key)) {
-            unset($this->population[$key]);
-        }
     }
 
     public function evolve(Reproduction $reproduction) : Population

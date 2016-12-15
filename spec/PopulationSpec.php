@@ -1,41 +1,54 @@
 <?php
 
 use GA\Population;
+use GA\Fitness;
 
 describe('Population', function() {
 
-    xit('should generate population', function() {
-        $population = new Population(new \GA\Fitness\Binary());
+    it('should generate population', function() {
+        mt_srand(5);
+        $population = new Population('binary');
         $population->generate();
         expect($population->count())->toEqual(200);
     });
 
-    xit('should return fittest', function() {
+    it('should order by fittest', function() {
         mt_srand(5);
 
-        $fitness = new \GA\Fitness\Binary();
+        $population = new Population('binary', 5);
+        $population->generate(5);
+        expect($population->count())->toEqual(5);
+
+        $fitness = new \GA\Fitness;
         $fitness->setSolution('1111111111000000000011111111110000000000111111111100000000001010');
+        $population->setFitness($fitness);
+        $population->orderByFitness();
 
-        $population = new Population($fitness);
-        $population->generate();
-        expect($population->count())->toEqual(200);
 
-        expect($population->getFittest()->getChromosome())->toEqual('0010111111001100100111111100110001100010010101111110001110001010');
-        expect($population->getFittest()->getFitness())->toEqual(70.3125);
+        expect($population->getFitness()->getValue($population->get()[0]))
+            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[1]));
+
+        expect($population->getFitness()->getValue($population->get()[1]))
+            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[2]));
+
+        expect($population->getFitness()->getValue($population->get()[2]))
+            ->toBeGreaterThan($population->getFitness()->getValue($population->get()[3]));
     });
 
-    xit('should remove individual', function() {
+    it('should get the fittest individual', function() {
         mt_srand(5);
-        $population = new Population(new \GA\Fitness\Binary());
-        $population->generate();
-        expect($population->count())->toEqual(200);
 
-        $individualId = mt_rand(0, $population->count() - 1);
-        $individual = $population->get()[$individualId];
+        $population = new Population('binary', 5);
+        $population->generate(5);
+        expect($population->count())->toEqual(5);
 
-        $population->removeIndividual($individual);
+        $fitness = new \GA\Fitness;
+        $fitness->setSolution('1111111111000000000011111111110000000000111111111100000000001010');
+        $population->setFitness($fitness);
 
-        expect($population->count())->toEqual(199);
+        $individual = $population->getFittest();
+
+        expect($individual->encoding()->chromosome())->toEqual('1000101110010110110011100101010000001001111011010110010000100011');
     });
 
     xit('should evolve', function() {

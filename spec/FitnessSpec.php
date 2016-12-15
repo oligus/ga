@@ -14,16 +14,16 @@ describe('Fitness', function() {
         $fitness = new Fitness();
 
         $fitness->setSolution('1100101110010110110011100101010000001001111011010110010000100011');
-        expect($fitness->getFitness($individual))->toEqual( 98.4375);
+        expect($fitness->getValue($individual))->toEqual( 98.4375);
 
         $fitness->setSolution('1111111111111111111111111111111111111111111111111111111111111111');
-        expect($fitness->getFitness($individual))->toEqual(46.875);
+        expect($fitness->getValue($individual))->toEqual(46.875);
 
         $fitness->setSolution('1000101110010110110011100101010000001001111011010110010000100011');
-        expect($fitness->getFitness($individual))->toEqual((float) 100);
+        expect($fitness->getValue($individual))->toEqual((float) 100);
 
         $fitness->setSolution('0111010001101001001100011010101111110110000100101001101111011100');
-        expect($fitness->getFitness($individual))->toEqual((float) 0);
+        expect($fitness->getValue($individual))->toEqual((float) 0);
     });
 
     it('it should get fitness by array', function() {
@@ -43,7 +43,7 @@ describe('Fitness', function() {
             'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D',
         ];
         $fitness->setSolution($solution);
-        expect($fitness->getFitness($individual))->toEqual(21.875);
+        expect($fitness->getValue($individual))->toEqual(21.875);
 
         $solution = [
             "D", "A", "A", "A", "D", "B", "D", "D",
@@ -56,7 +56,7 @@ describe('Fitness', function() {
             "A", "A", "D", "A", "A", "B", "D", "C"
         ];
         $fitness->setSolution($solution);
-        expect($fitness->getFitness($individual))->toBe( (float) 100);
+        expect($fitness->getValue($individual))->toBe( (float) 100);
 
         $solution = [
             "C", "B", "B", "C", "A", "C", "C", "B",
@@ -70,7 +70,7 @@ describe('Fitness', function() {
         ];
 
         $fitness->setSolution($solution);
-        expect($fitness->getFitness($individual))->toEqual( (float) 0);
+        expect($fitness->getValue($individual))->toEqual( (float) 0);
 
         $solution = [
             "D", "A", "A", "A", "D", "B", "D", "D",
@@ -84,8 +84,6 @@ describe('Fitness', function() {
         ];
 
         $fitness->setSolution($solution);
-        expect($fitness->getFitness($individual))->toEqual( (float) 50 );
-
+        expect($fitness->getValue($individual))->toEqual( (float) 50 );
     });
-
 });
