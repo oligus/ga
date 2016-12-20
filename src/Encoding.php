@@ -17,6 +17,8 @@ abstract class Encoding
     protected $chromosome;
     protected $genes = [];
 
+    public abstract function mutate();
+
     /**
      * Encoding constructor.
      * @param null $chromosome

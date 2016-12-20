@@ -58,13 +58,13 @@ class Population
         return count($this->population);
     }
 
-    public function evolve(Reproduction $reproduction) : Population
+    public function evolve(Reproduction $reproduction, Fitness $fitness) : Population
     {
-        $newPopulation = new Population($this->fitness);
+        $newPopulation = new Population($this->encoding);
 
         if(Settings::ELITISM) {
             $elitism = new Elitism();
-            $elites = $elitism->getElites($this);
+            $elites = $elitism->getElites($this, $fitness);
 
             foreach($elites as $individual) {
                 $newPopulation->add($individual);
@@ -72,24 +72,26 @@ class Population
         }
 
         $tournament = new Tournament();
-        
+
         while($newPopulation->count() < Settings::POPULATION_SIZE)
         {
+            /* @var Individual $child1 */
+            /* @var Individual $child2 */
             list($child1, $child2)= $reproduction->reproduce(
-                $tournament->getWinner($this),
-                $tournament->getWinner($this)
+                $tournament->getWinner($this, $fitness),
+                $tournament->getWinner($this, $fitness)
             );
 
-            $child1->setFitness($this->fitness);
-            $child2->setFitness($this->fitness);
+            $encoding1 = $child1->encoding()->mutate();
+            $encoding2 = $child2->encoding()->mutate();
 
-            $child1->mutate();
-            $child2->mutate();
-            $newPopulation->add($child1);
-            $newPopulation->add($child2);
+            $offspring1 = new Individual($encoding1);
+            $offspring2 = new Individual($encoding2);
+
+            $newPopulation->add($offspring1);
+            $newPopulation->add($offspring2);
         }
 
         return $newPopulation;
-
     }
 }

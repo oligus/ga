@@ -32,24 +32,24 @@ describe('Population', function() {
             ->toBeGreaterThan($fitness->getValue($population->get()[3]));
     });
 
-    xit('should evolve', function() {
+    it('should evolve', function() {
         mt_srand(5);
-        $population = new Population(new \GA\Fitness\Binary('1111111111000000000011111111110000000000111111111100000000001010'));
+
+        $population = new Population('binary');
         $population->generate(10);
+        $fitness = new \GA\Fitness('1111111111000000000011111111110000000000111111111100000000001010');
         expect($population->count())->toEqual(10);
 
         $generation = 1;
-        echo "Generation " .  $generation . ' - Fittest: ' . $population->getFittest()->getFitness() . "\n";
+        echo "Generation " .  $generation . ' - Fittest: ' . $fitness->getValue($fitness->getFittest($population)) . "\n";
 
-        $myPop = $population->evolve(new \GA\Reproduction\UniformCrossOver());
+        $myPop = $population->evolve(new \GA\Reproduction\UniformCrossOver(), $fitness);
 
-        while($myPop->getFittest()->getFitness() < 100) {
-
-            $myPop = $myPop->evolve(new \GA\Reproduction\UniformCrossOver());
-            echo "Generation " .  $generation . ' - Fittest: ' . $myPop->getFittest()->getFitness() . "\n";
+        while($fitness->getValue($fitness->getFittest($myPop)) < 100) {
+            $myPop = $population->evolve(new \GA\Reproduction\UniformCrossOver(), $fitness);
+            $fittest = $fitness->getFittest($myPop);
+            echo "Generation " .  $generation . ' - Fittest: ' . $fitness->getValue($fittest) . "\n";
             $generation++;
-
-            //Bail
             if($generation > 2000) {
                 break;
             }
